@@ -1,6 +1,7 @@
 import './App.css';
 import Contact from './pages/Contact'
 import Home from './pages/Home'
+import Resume from './pages/Resume'
 
 import {
   BrowserRouter,
@@ -19,6 +20,7 @@ function App() {
       <Route path = "/" element = {<Root/>}>
         <Route index element = {<Home/>}/>
         <Route path = "/contact" element = {<Contact/>}/>
+        <Route path = "/resume" element = {<Resume/>}/>
 
       </Route>
     )
@@ -36,7 +38,7 @@ const Root = ()=>{
       <nav className="navbar">
         <div className="navbar-brand"><Link className='navbar-brand-link' to = '/'>Royce Williams</Link></div>
         <div className="navbar-links">
-          <Link to="/Resume">Resume</Link>
+          <Link to="/resume">Resume</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </nav>
